@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<conio.h>
+void one()
+{
+    printf("        MENU        ");
+    printf("\n");
+    printf("1.FULL MEALS         $15\n");
+    printf("2.NOODLES            $10\n");
+    printf("3.FRIED RICE         $10\n");
+    printf("4.BIRYANI            $20\n");
+    printf("5.SP-DOSA            $5\n");
+    printf("--------------------------\n");
+}
+void two()
+{
+   printf("         ORDER        \n") ;
+   int n;
+   printf("Enter the order number from 1-5\n");
+   scanf("%d",&n);
+   
+    switch (n) {
+  case 1:
+    printf("1.FULL MEALS\n");
+    printf("BILL FOR THIS ITEM IS $15");
+    break;
+  case 2:
+    printf("2.NOODLES\n");
+    printf("BILL FOR THIS ITEM IS $10");
+    break;
+  case 3:
+    printf("3.FRIED RICE\n");
+    printf("BILL FOR THIS ITEM IS $10");
+    break;
+  case 4:
+    printf("4.BIRYANI\n");
+    printf("BILL FOR THIS ITEM IS $20");
+    break;
+  case 5:
+    printf("5.SP-DOSA\n");
+    printf("BILL FOR THIS ITEM IS $15");
+    break;
+    default:
+    printf("NO ORDER ENTERED");
+    break;
+}
+}
+int main()
+{
+    one();
+    two();
+    return 0;
+}
